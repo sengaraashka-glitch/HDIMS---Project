@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HDIMS - Health Data Information & Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WELCOME SCREEN -->
+<div id="welcomePage" class="welcome-container">
+    <div class="welcome-card">
+        <h1>HDIMS</h1>
+        <p>Health Data Information & Management System</p>
+        <button onclick="showAuth()">Get Started</button>
+    </div>
+</div>
+
+<!-- LOGIN / SIGNUP -->
+<div id="authPage" class="auth-container" style="display:none;">
+
+    <div class="auth-box">
+        <h2>Login</h2>
+
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p>Don't have account?</p>
+
+        <input type="text" id="signupUsername" placeholder="Create Username">
+        <input type="password" id="signupPassword" placeholder="Create Password">
+
+        <button onclick="signup()">Sign Up</button>
+    </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="mainApp" style="display:none;">
+
+<h1>HDIMS - Health Data Information & Management System</h1>
+
+<div style="text-align:center; margin:10px;">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<!-- ROLE -->
+<div style="text-align:center;">
+    <label>Select Role:</label>
+    <select id="role" onchange="loadPatients()">
+        <option value="user">Hospital / Department</option>
+        <option value="admin">Super Admin</option>
+    </select>
+</div>
+
+<!-- FORM -->
+<div class="form">
+    <input type="text" id="name" placeholder="Patient Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="text" id="disease" placeholder="Disease">
+
+    <input type="text" id="hospital" placeholder="Hospital Name">
+    <input type="text" id="district" placeholder="District">
+    <input type="text" id="state" placeholder="State">
+
+    <select id="scheme">
+        <option>Vaccination</option>
+        <option>TB Program</option>
+        <option>Maternal Health</option>
+    </select>
+
+    <button onclick="addPatient()">Submit Data</button>
+</div>
+
+<!-- DASHBOARD -->
+<h2 style="text-align:center;">Dashboard</h2>
+<canvas id="chart" height="100"></canvas>
+
+<!-- TABLE -->
+<h2 style="text-align:center;">Health Records</h2>
+
+<table id="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Disease</th>
+        <th>Hospital</th>
+        <th>District</th>
+        <th>State</th>
+        <th>Scheme</th>
+    </tr>
+</table>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+```
+
+---
+

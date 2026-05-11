@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+h1 {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 15px;
+}
+
+/* WELCOME PAGE */
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.welcome-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.welcome-card h1 {
+    background: none;
+    color: #007bff;
+    margin: 0;
+}
+
+.welcome-card button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* AUTH PAGE */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eef2f7;
+}
+
+.auth-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* MAIN APP */
+.form {
+    padding: 15px;
+    background: white;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background: red;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    background: white;
+    border-collapse: collapse;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+canvas {
+    background: white;
+    margin: 20px auto;
+    display: block;
+    width: 90% !important;
+    max-width: 800px;
+    padding: 10px;
+    border-radius: 10px;
+}
