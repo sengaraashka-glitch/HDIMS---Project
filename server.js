@@ -10,6 +10,9 @@ const PORT = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public"));
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/index.html");
+});
 
 // FILE PATH FIX
 const filePath = path.join(__dirname, "data.json");
