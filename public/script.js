@@ -26,28 +26,47 @@ function signup() {
 
 // LOGIN
 function login() {
+
     const username = document.getElementById("loginUsername").value;
+
     const password = document.getElementById("loginPassword").value;
 
+
     const savedUser = localStorage.getItem("hdimsUser");
+
     const savedPass = localStorage.getItem("hdimsPass");
 
+
     if (username === savedUser && password === savedPass) {
-        alert("Login Successful");
+
+        alert("Login Successful!");
+
+        alert("Welcome to HDIMS");
+
 
         document.getElementById("authPage").style.display = "none";
+
         document.getElementById("mainApp").style.display = "block";
 
+
         loadPatients();
-    } else {
+
+    } 
+    
+    else {
+
         alert("Invalid Username or Password");
+
     }
 }
 
 // LOGOUT
+// LOGOUT
 function logout() {
+
     document.getElementById("mainApp").style.display = "none";
-    document.getElementById("authPage").style.display = "flex";
+
+    document.getElementById("logoutPage").style.display = "flex";
 }
 
 // ADD PATIENT
